@@ -5,11 +5,13 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
-
+    ~/.zshrc:
+    ~/.gitconfig: 
 - create:
-    - ~/Work
-    - ~/hey/you
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+#  - [git submodule update --init --recursive, Installing submodules]
+    - 
+      command: ./test.sh
+      stdout: true
+      stderr: true
