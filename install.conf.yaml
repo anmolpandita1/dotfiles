@@ -6,8 +6,10 @@
 
 - link:
     ~/.zshrc:
-    ~/.gitconfig: 
-- create:
+    ~/.gitconfig:
+    ~/.config:
+      create: true
+      path: config
 
 - shell:
 #  - [git submodule update --init --recursive, Installing submodules]
