@@ -1,12 +1,10 @@
-#Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-
-#Brews for packages
 brew "bat"
 brew "exa"
-
-#casks for applications
+brew "mas"
 cask "visual-studio-code"
 cask "vlc"
+mas "telegram", id: 747648890
+

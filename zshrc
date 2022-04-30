@@ -6,17 +6,21 @@ export HOMEBREW_CASK_OPS="--no-quarantine"
 # Change ZSH Options
 
 # Create Aliases
-#call original commands using command keyword: command ls
-#--| -l list, -A dont show parent dir, -h readable space used, -F directory/ 
+#--------------------------------------------------------- call original commands using command keyword: command ls
+# -l list, -A dont show parent dir, -h space use in kb/mb , -F show /, @ and * for special files 
 alias ls="exa -lahF --git"
-# Customize Prompt
-PROMPT='
-%1~ %L %# '
+alias cat="bat"
 
+
+
+# Customize Prompt
+PROMPT='%1~ %L %# '
 RPROMPT='%*'
 
 
 # Add Locations to $PATH Variable
+
+
 
 # Write Handy Functions
 function mkcd(){
