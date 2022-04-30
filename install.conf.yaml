@@ -12,6 +12,6 @@
 - shell:
 #  - [git submodule update --init --recursive, Installing submodules]
     - 
-      command: ./test.sh
+      command: ./setup_homebrew.sh
       stdout: true
       stderr: true
