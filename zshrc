@@ -8,8 +8,7 @@ export HOMEBREW_CASK_OPS="--no-quarantine"
 # Create Aliases
 #call original commands using command keyword: command ls
 #--| -l list, -A dont show parent dir, -h readable space used, -F directory/ 
-alias ls='ls -lAhF' 
-
+alias ls="exa -lahF --git"
 # Customize Prompt
 PROMPT='
 %1~ %L %# '
