@@ -3,6 +3,7 @@ echo "Hello from .zshrc"
 #--| Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p '"
 export HOMEBREW_CASK_OPS="--no-quarantine"
+export NULLCMD=bat
 
 # Change ZSH Options
 
@@ -12,7 +13,7 @@ export HOMEBREW_CASK_OPS="--no-quarantine"
 alias ls="exa -lahF --git"
 alias cat="bat"
 alias bbd="brew bundle dump --force --describe"
-
+alias trail='bat<<<${(F)path}' #path and PATH are separate, (F) for adding newline, <<< for using hereword (see hereword and heredoc) cat is default and <<< is for single line re-direction
 
 # Customize Prompt
 PROMPT='%1~ %L %# '
