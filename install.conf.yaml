@@ -1,17 +1,20 @@
 - defaults:
     link:
       relink: true
-
+    shell:
+      stdout: true
+      stderr: true
 - clean: ['~']
 
 - link:
     ~/.zshrc:
-    ~/.gitconfig: 
-- create:
+    ~/.zshenv:
+    ~/.gitconfig:
+    ~/.config:
+      create: true
+      path: config
 
 - shell:
 #  - [git submodule update --init --recursive, Installing submodules]
     - 
       command: ./setup_homebrew.sh
-      stdout: true
-      stderr: true

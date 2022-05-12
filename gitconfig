@@ -3,3 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Anmol Pandita
 	email = 39385082+anmolpandita1@users.noreply.github.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
