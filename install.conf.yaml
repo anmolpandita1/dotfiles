@@ -10,6 +10,7 @@
     ~/.zshrc:
     ~/.zshenv:
     ~/.gitconfig:
+    ~/Library/Preferences/com.googlecode.iterm2.plist: iterm2/com.googlecode.iterm2.plist 
     ~/.config:
       create: true
       path: config
