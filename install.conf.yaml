@@ -1,7 +1,9 @@
 - defaults:
     link:
       relink: true
-
+    shell:
+      stdout: true
+      stderr: true
 - clean: ['~']
 
 - link:
@@ -16,5 +18,3 @@
 #  - [git submodule update --init --recursive, Installing submodules]
     - 
       command: ./setup_homebrew.sh
-      stdout: true
-      stderr: true
